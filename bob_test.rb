@@ -110,7 +110,6 @@ class BobTest < Minitest::Test
 
   def test_alternate_silences
     remark = "\t" * rand(1..10)
-    puts remark
     assert_equal 'Fine. Be that way!', bob.hey(remark), feedback(remark)
   end
 
@@ -119,6 +118,5 @@ class BobTest < Minitest::Test
 Does this cryogenic chamber make me look fat?
 no)
     assert_equal 'Whatever.', bob.hey(remark), feedback(remark)
-    p remark
   end
 end
